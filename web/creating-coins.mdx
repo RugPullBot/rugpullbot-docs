@@ -1,0 +1,113 @@
+---
+title: Creating Coins
+description: Create simulated tokens using real historical rug data
+---
+
+# Creating Coins
+
+The Create Coin page allows you to set up new token simulations based on real historical rug pull data.
+
+## Overview
+
+Creating a coin in RugPullBot means setting up a simulation that replays actual market data from a historical rug pull. This gives you realistic price action and trading patterns to analyze.
+
+## Token Information
+
+### Required Fields
+
+| Field | Description | Requirements |
+|-------|-------------|--------------|
+| **Name** | Token display name | Required |
+| **Ticker** | Token symbol | 2-12 characters, auto-uppercased |
+
+### Optional Fields
+
+| Field | Description |
+|-------|-------------|
+| **Description** | Token description text |
+| **Twitter** | Twitter/X profile URL |
+| **Telegram** | Telegram group URL |
+| **Website** | Project website URL |
+| **Token Image** | PNG, JPEG, or GIF upload |
+
+## Let AI Handle It
+
+<Tip>
+The "Let AI Handle It" button automatically fills in token metadata from the latest detected rug in the queue.
+</Tip>
+
+When clicked, this feature:
+1. Fetches the most recent "ready" rug from the queue
+2. Auto-fills name, ticker, description, and social links
+3. Uses the original token's image
+4. Sets the mint address for accurate simulation
+
+This is the fastest way to create a realistic simulation using verified rug data.
+
+## Token Preview
+
+As you fill in the form, the preview card updates in real-time showing:
+- Token image (or generated avatar from ticker)
+- Name and ticker
+- Description preview
+- Social link buttons
+
+## Launch Details
+
+The Launch Details panel shows simulation parameters:
+
+| Parameter | Value |
+|-----------|-------|
+| Network | Solana |
+| Platform | Pump.fun |
+| Initial Supply | 1,000,000,000 |
+| Projected CA | Contract address (from original rug or generated) |
+| Launch Fee | 0.02 SOL |
+
+## System Status
+
+The header bar shows real-time system status:
+
+- **SOL WebSocket**: Connection latency
+- **SOL Node**: Current block number
+- **RPC Nodes**: Number of online nodes
+- **Active Users**: Current platform users
+
+## Creating Process
+
+<Steps>
+  <Step title="Fill Token Info">
+    Enter name, ticker, and optional details manually or use "Let AI Handle It"
+  </Step>
+  <Step title="Upload Image (Optional)">
+    Add a custom token image or use the original rug's image
+  </Step>
+  <Step title="Review Preview">
+    Check the token preview card for accuracy
+  </Step>
+  <Step title="Create Token">
+    Click "Create Token" to save to your portfolio
+  </Step>
+</Steps>
+
+## After Creation
+
+Once created, your coin appears in the Portfolio with status "Pending". From there you can:
+
+1. **Configure Settings**: Set bundler modes, rug triggers, and withdrawal addresses
+2. **Launch**: Start the simulation to begin price replay
+3. **View**: Watch the TradingView chart with live candlestick data
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Use AI Auto-Fill">
+    For the most realistic simulations, use "Let AI Handle It" to pull verified rug data.
+  </Accordion>
+  <Accordion title="Configure Before Launch">
+    Always configure your coin settings before launching to ensure proper trigger setup.
+  </Accordion>
+  <Accordion title="Set Withdrawal Addresses">
+    Configure withdrawal wallets before launching so profits are automatically routed correctly.
+  </Accordion>
+</AccordionGroup>

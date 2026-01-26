@@ -1,0 +1,122 @@
+---
+title: Coin Settings
+description: Configure every aspect of your coin simulation
+---
+
+# Coin Settings
+
+The Coin Settings page provides comprehensive configuration options for your token simulation.
+
+## Accessing Settings
+
+1. Go to your **Portfolio**
+2. Find your coin and click the **Settings** (gear) icon
+3. Or navigate directly to `/portfolio/{coinId}/settings`
+
+## Node Configuration
+
+### Trading Source
+Select the simulated trading source appearance:
+- Random (recommended)
+- Photon
+- BullX
+- Trojan
+- Sol Trading Bot
+- None
+
+### Jito Location
+Choose the geographic region for Jito integration:
+- Frankfurt
+- Amsterdam
+- New York
+- Tokyo
+- Singapore
+
+### Fast Jito Bypass
+Enable for faster transaction processing (recommended on).
+
+## Developer Wallet Settings
+
+Configure the main developer wallet parameters:
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| Dev Buy Amount | SOL amount for dev wallet initial buy | 1.0 SOL |
+| Bundler Wallets | Number of bundler wallets | 20 |
+| Bundler Amount | SOL per bundler wallet | 0.05 SOL |
+
+### Bonding Curve Calculator
+The settings page shows a real-time calculation of your bonding curve percentage based on:
+- Dev buy amount
+- Number of bundler wallets
+- Amount per bundler
+
+<Note>
+Pump.fun requires approximately 85 SOL to reach 100% bonding curve.
+</Note>
+
+## Security Settings
+
+### Anti-MEV Protection
+Protects your transactions from MEV sandwich attacks. **Highly recommended to keep enabled.**
+
+<Warning>
+Disabling Anti-MEV protection may cause you to lose funds to front-running bots.
+</Warning>
+
+### Anti-Sniper Mode
+Prevents known sniper bots from front-running your launch.
+
+### Honeypot Mode
+When enabled, creates restrictions on selling that trap buyers.
+
+## Rug Triggers
+
+Configure automatic rug triggers based on market conditions. See [Rug Triggers](/web/rug-triggers) for details.
+
+## Market Simulation
+
+Enable additional market simulation features:
+
+| Setting | Description |
+|---------|-------------|
+| Simulation Wallets | Number of wallets for fake activity |
+| Wallet Funding | SOL amount per simulation wallet |
+
+## Micro-Buy Configuration
+
+Set up automatic small purchases:
+
+| Setting | Description |
+|---------|-------------|
+| Micro-Buy Wallets | Number of wallets |
+| Min/Max SOL | Range for random buy amounts |
+| Min/Max Delay | Random delay between buys |
+
+## Withdrawal Configuration
+
+Set up profit extraction addresses. See [Withdrawals](/web/withdrawals) for complete details.
+
+## Webhook Notifications
+
+Configure Discord and Telegram notifications:
+
+### Discord Webhook
+Paste your Discord webhook URL to receive notifications.
+
+### Telegram Bot
+Configure bot token and chat ID for Telegram alerts.
+
+### Trigger Events
+- On Launch
+- Holder Milestones (50, 100, 250, 500, 1000)
+- Market Cap Milestones ($10K, $25K, $50K, $100K, $500K)
+- On Rug
+
+## Saving Settings
+
+Click **Save Settings** at the bottom of the page to persist all changes. Settings are saved per-coin and persist across sessions.
+
+<Tip>
+Configure all settings before launching your coin. Some settings cannot be changed after launch.
+</Tip>

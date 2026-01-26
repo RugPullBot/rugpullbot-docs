@@ -1,0 +1,90 @@
+---
+title: Dashboard
+description: Navigate and understand your RugPullBot dashboard
+---
+
+# Dashboard
+
+The Dashboard is your central hub for managing wallets and monitoring your portfolio.
+
+## Overview
+
+When you log in, the Dashboard displays:
+
+- **Portfolio Summary**: Total balance across all wallets in SOL and USD
+- **Price Change**: 24-hour balance change with percentage
+- **Wallet Count**: Number of connected wallets
+- **Crypto Price Ticker**: Real-time prices for major cryptocurrencies
+
+## Portfolio Summary
+
+The Portfolio Summary card shows your total holdings at a glance:
+
+| Metric | Description |
+|--------|-------------|
+| Total Balance (SOL) | Sum of all wallet balances in SOL |
+| Total Balance (USD) | USD equivalent based on current SOL price |
+| 24h Change | Net change in portfolio value |
+| Change % | Percentage change over 24 hours |
+
+## Your Wallets
+
+The Wallets section displays all your connected Solana wallets:
+
+### Wallet Card Features
+
+Each wallet card shows:
+- **Wallet Name**: Customizable name (click to edit)
+- **Balance**: Current SOL balance and USD equivalent
+- **Address**: Truncated wallet address with copy button
+- **24h Change**: Individual wallet performance
+- **Actions**: Send, view transactions on Solscan
+
+### Creating Wallets
+
+Click the **Create new Wallets** button to generate new Solana wallets. These wallets are:
+- Automatically generated with secure keypairs
+- Immediately available for use
+- Displayed in your wallet list
+
+### Wallet Actions
+
+<CardGroup cols={2}>
+  <Card title="Send" icon="paper-plane">
+    Transfer SOL to other wallets. Opens the transfer modal.
+  </Card>
+  <Card title="View Transactions" icon="arrow-up-right-from-square">
+    Opens Solscan to view full transaction history.
+  </Card>
+</CardGroup>
+
+## Transfer Modal
+
+The transfer modal allows you to send SOL between wallets:
+
+1. **From Wallet**: Select the source wallet
+2. **To Address**: Enter destination address or select from your wallets
+3. **Amount**: Enter SOL amount to send
+4. **Confirm**: Review and confirm the transaction
+
+<Warning>
+Always double-check the destination address before confirming transfers. Transactions on Solana are irreversible.
+</Warning>
+
+## Crypto Price Ticker
+
+The top of the dashboard shows real-time prices for:
+- SOL (Solana)
+- BTC (Bitcoin)
+- ETH (Ethereum)
+
+Prices update automatically via WebSocket connection for real-time accuracy.
+
+## Navigation
+
+From the Dashboard, you can navigate to:
+
+- **Portfolio**: Manage your created coins
+- **Create Coin**: Start a new coin simulation
+- **Profile**: Update account settings
+- **Plans**: View or upgrade your subscription

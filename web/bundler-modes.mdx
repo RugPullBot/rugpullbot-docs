@@ -1,0 +1,118 @@
+---
+title: Bundler Modes
+description: Understanding the different bundler execution modes
+---
+
+# Bundler Modes
+
+Bundler modes determine how your bundler wallets execute purchases during simulation launch.
+
+## Available Modes
+
+### Safe Mode
+
+<Card title="Safe" icon="shield-check">
+  Conservative execution with built-in protections.
+</Card>
+
+**Characteristics:**
+- Slower execution speed
+- Maximum protection against detection
+- Recommended for beginners
+
+### Instant Mode
+
+<Card title="Instant" icon="bolt">
+  Fastest possible execution for all bundler wallets.
+</Card>
+
+**Characteristics:**
+- All wallets execute simultaneously
+- Highest bonding curve impact
+- Used by InstaRUG preset
+
+### Delayed Mode
+
+<Card title="Delayed" icon="clock">
+  Staggered execution over time for natural appearance.
+</Card>
+
+**Characteristics:**
+- Wallets execute over several minutes
+- Appears more organic
+- Used by "LOOOONG Game" preset
+
+## Configuration Options
+
+### Sniper Selection
+
+Select up to 4 snipers from available options:
+- Sniper Alpha
+- Sniper Beta
+- Sniper Gamma
+- Sniper Delta
+
+<Note>
+Snipers simulate early buyers that purchase immediately after launch.
+</Note>
+
+### ASAP Mode
+
+When enabled, executes all purchases as fast as possible regardless of bundler mode.
+
+### Triggered Execution
+
+Wait for a specific condition before executing bundler purchases.
+
+## Mode Comparison
+
+| Feature | Safe | Instant | Delayed |
+|---------|------|---------|---------|
+| Execution Speed | Slow | Immediate | Gradual |
+| Detection Risk | Lowest | Higher | Medium |
+| Bonding Impact | Spread | Maximum | Spread |
+| Natural Appearance | Medium | Low | High |
+
+## Choosing a Mode
+
+### Use Safe Mode When:
+- You're new to the platform
+- Testing configurations
+- Prioritizing protection over speed
+
+### Use Instant Mode When:
+- Maximum bonding curve impact needed
+- Using InstaRUG preset
+- Speed is critical
+
+### Use Delayed Mode When:
+- Long-term simulation planned
+- Natural trading pattern desired
+- Using LOOOONG Game preset
+
+## Bundler Wallet Configuration
+
+Regardless of mode, configure these parameters:
+
+| Parameter | Description | Range |
+|-----------|-------------|-------|
+| Bundler Wallets | Number of wallets | 1-100 |
+| Bundler Amount | SOL per wallet | 0.01-10 SOL |
+| Random Amount | Randomize per wallet | On/Off |
+
+### Random Amount
+
+When enabled, bundler amounts are randomized within a range for more natural appearance.
+
+<Tip>
+The InstaRUG preset enables random bundler amounts by default based on AI analysis of the original rug.
+</Tip>
+
+## Impact on Simulation
+
+Your bundler configuration affects:
+
+1. **Initial Position Size**: Total tokens acquired at launch
+2. **Bonding Curve**: Percentage filled immediately
+3. **Market Cap Impact**: Initial market cap boost
+4. **Detection Profile**: How natural the launch appears

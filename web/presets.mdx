@@ -1,0 +1,107 @@
+---
+title: Presets
+description: Pre-configured strategies for quick setup
+---
+
+# Presets
+
+Presets are pre-configured strategy templates that automatically set up your coin with optimized parameters.
+
+## Available Presets
+
+### InstaRUG
+
+<Card title="InstaRUG" icon="bolt">
+  **Author**: theonlyrugger
+  
+  Rugs at the exact market cap right before the original rug happened.
+</Card>
+
+The InstaRUG preset is designed for maximum accuracy by:
+
+1. **Analyzing Original Rug Data**: Reads the original dev wallet and bundler configuration
+2. **Calculating Optimal Settings**: Sets dev buy and bundler amounts based on actual data
+3. **Setting Trigger Point**: Automatically sets market cap trigger to the peak before the original rug
+
+#### InstaRUG Configuration
+
+When you apply InstaRUG, it automatically sets:
+
+| Setting | Value |
+|---------|-------|
+| Bundler Mode | Instant |
+| Dev Buy Amount | Calculated from original dev |
+| Bundler Wallets | Count from original bundlers |
+| Bundler Amount | Randomized by AI |
+| Honeypot | Enabled |
+| Market Cap Trigger | Original peak market cap |
+| Holder Trigger | Disabled |
+| Liquidity Trigger | Disabled |
+
+<Tip>
+InstaRUG requires AI analysis of the original rug data. Make sure your coin was created using "Let AI Handle It" for best results.
+</Tip>
+
+### The LOOOONG Game
+
+<Card title="The LOOOONG Game" icon="clock">
+  **Author**: wh1ter0se
+  
+  Patient strategy with delayed multi-phase distribution.
+</Card>
+
+Configuration for extended simulations:
+
+| Setting | Value |
+|---------|-------|
+| Bundler Mode | Delayed |
+| Dev Buy Amount | 0.8 SOL |
+| Bundler Wallets | 40 |
+| Bundler Amount | 0.03 SOL |
+| Holder Trigger | 500 holders |
+
+## Applying Presets
+
+<Steps>
+  <Step title="Open Coin Settings">
+    Navigate to your coin's settings page
+  </Step>
+  <Step title="Find Presets Section">
+    Look for the Presets panel at the top of the page
+  </Step>
+  <Step title="Click Apply">
+    Click on the preset card to apply its configuration
+  </Step>
+  <Step title="Review Settings">
+    All settings are automatically filled. Review before saving.
+  </Step>
+  <Step title="Save Changes">
+    Click Save Settings to persist the preset configuration
+  </Step>
+</Steps>
+
+## Preset Requirements
+
+### InstaRUG Requirements
+
+For InstaRUG to work correctly:
+
+1. **Source Rug Data**: Coin must have `sourceRugId` (created via "Let AI Handle It")
+2. **Rug Analysis Complete**: System must have analyzed the original rug
+3. **Withdrawal Address**: At least one withdrawal address must be configured
+
+<Warning>
+If no withdrawal address is set, InstaRUG will attempt to use your first dashboard wallet. If none exist, you'll be prompted to add one.
+</Warning>
+
+## Custom Presets
+
+While the system comes with built-in presets, your saved settings effectively become custom presets when you:
+
+1. Configure a coin with your preferred settings
+2. Save the settings
+3. Use as reference for future coins
+
+<Note>
+A formal custom preset saving feature is planned for future updates.
+</Note>

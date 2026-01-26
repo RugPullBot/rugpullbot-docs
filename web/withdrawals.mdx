@@ -1,0 +1,150 @@
+---
+title: Withdrawals
+description: Configure withdrawal addresses for profit extraction
+---
+
+# Withdrawals
+
+Configure where profits are sent when a rug trigger activates.
+
+## Withdrawal Configuration
+
+Access withdrawal settings in the Coin Settings page under "Withdrawal Configuration".
+
+## SOL Withdrawal Addresses
+
+### Adding Addresses
+
+<Steps>
+  <Step title="Enter Address">
+    Paste a valid Solana wallet address
+  </Step>
+  <Step title="Set Allocation">
+    Choose percentage or fixed amount
+  </Step>
+  <Step title="Add More (Optional)">
+    Click "Add Wallet" for additional destinations
+  </Step>
+</Steps>
+
+### Allocation Types
+
+| Type | Description |
+|------|-------------|
+| Percentage | Percentage of total profits (e.g., 50%) |
+| Fixed Amount | Maximum SOL to send (e.g., 10 SOL) |
+
+### Multiple Addresses
+
+Split withdrawals across multiple wallets:
+
+```
+Wallet A: 50% of profits
+Wallet B: 30% of profits  
+Wallet C: 20% of profits
+```
+
+<Note>
+Percentages should total 100% unless using fixed amounts.
+</Note>
+
+## Quick Select from Dashboard
+
+Your dashboard wallets appear as quick-select options:
+
+1. Click "Select from Dashboard"
+2. Choose a wallet
+3. Address auto-fills
+
+## Currency Options
+
+Choose withdrawal currency:
+
+| Currency | Description |
+|----------|-------------|
+| SOL | Native Solana (default) |
+| USDC | Stablecoin conversion |
+
+<Note>
+USDC withdrawals convert profits before sending.
+</Note>
+
+## XMR Integration
+
+For enhanced privacy, enable Monero (XMR) conversion:
+
+<Steps>
+  <Step title="Enable XMR">
+    Toggle "Use XMR for enhanced privacy"
+  </Step>
+  <Step title="Enter XMR Address">
+    Paste your Monero wallet address
+  </Step>
+  <Step title="Automatic Conversion">
+    Profits convert to XMR during withdrawal
+  </Step>
+</Steps>
+
+<Warning>
+XMR conversion may incur additional fees and delay.
+</Warning>
+
+## Withdrawal Timing
+
+Withdrawals execute when:
+
+1. A rug trigger activates
+2. Manual "Sell All" is clicked
+3. Simulation completes
+
+## Configuration Examples
+
+### Single Wallet (100%)
+```
+Wallet: GzD4...8kLP
+Percentage: 100%
+```
+
+### Split 50/50
+```
+Wallet A: 50%
+Wallet B: 50%
+```
+
+### Fixed + Percentage
+```
+Wallet A: Max 5 SOL (fixed)
+Wallet B: Remaining % (percentage)
+```
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Test Addresses First">
+    Send a small test amount before configuring for large withdrawals.
+  </Accordion>
+  <Accordion title="Use Your Own Wallets">
+    Only use wallet addresses you control.
+  </Accordion>
+  <Accordion title="Verify Before Launch">
+    Double-check withdrawal configuration before launching a coin.
+  </Accordion>
+  <Accordion title="Consider Privacy">
+    Use XMR or multiple wallets for enhanced privacy.
+  </Accordion>
+</AccordionGroup>
+
+## Withdrawal Errors
+
+### No Address Configured
+If no withdrawal address is set when applying InstaRUG:
+- System prompts you to add an address
+- Or auto-selects your first dashboard wallet
+
+### Invalid Address
+- Check address format (base58, 44 characters)
+- Ensure address is a valid Solana wallet
+
+### Insufficient Balance
+- Ensure enough SOL for gas fees
+- Check bonding curve position

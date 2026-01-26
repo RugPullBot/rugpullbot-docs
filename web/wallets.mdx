@@ -1,0 +1,137 @@
+---
+title: Wallet Management
+description: Create and manage your Solana wallets
+---
+
+# Wallet Management
+
+RugPullBot allows you to create and manage multiple Solana wallets for your simulations.
+
+## Dashboard Wallets
+
+Your wallets are displayed in the Dashboard with:
+
+- **Name**: Customizable wallet identifier
+- **Address**: Full Solana public key
+- **Balance**: Current SOL balance
+- **USD Value**: Balance converted to USD
+- **24h Change**: Balance change over 24 hours
+
+## Creating Wallets
+
+<Steps>
+  <Step title="Access Dashboard">
+    Navigate to your Dashboard
+  </Step>
+  <Step title="Click Create">
+    Click "Create new Wallets" button
+  </Step>
+  <Step title="Confirm">
+    Confirm wallet creation in the modal
+  </Step>
+  <Step title="View New Wallet">
+    New wallet appears in your list immediately
+  </Step>
+</Steps>
+
+## Wallet Features
+
+### Renaming Wallets
+
+Click on a wallet name to edit it. Custom names help you organize:
+- "Dev Wallet"
+- "Bundler 1"
+- "Profits"
+
+### Copy Address
+
+Click the copy icon next to any address to copy it to clipboard.
+
+### View Transactions
+
+Click the external link icon to view full transaction history on Solscan.
+
+## Wallet Types
+
+### Main Wallet
+
+Your primary wallet, marked with a special indicator. Used as default for:
+- Dev wallet operations
+- Profit withdrawal destination
+- Default transfer source
+
+### Additional Wallets
+
+Secondary wallets for:
+- Bundler operations
+- Holding profits
+- Separating activities
+
+## Balance Information
+
+| Field | Description |
+|-------|-------------|
+| SOL Balance | Native SOL holdings |
+| USD Value | Current USD equivalent |
+| Change | 24h balance change |
+| Change % | Percentage change |
+
+<Note>
+Balances update automatically every 30 seconds.
+</Note>
+
+## Transfer Modal
+
+Send SOL between wallets:
+
+<Steps>
+  <Step title="Click Send">
+    Click the "Send" button on a wallet card
+  </Step>
+  <Step title="Enter Amount">
+    Specify the SOL amount to transfer
+  </Step>
+  <Step title="Select Destination">
+    Enter address or select from your wallets
+  </Step>
+  <Step title="Confirm">
+    Review and confirm the transfer
+  </Step>
+</Steps>
+
+### Transfer Notes
+
+- Minimum transfer: 0.000001 SOL
+- Network fees apply (~0.000005 SOL)
+- Transfers are on Solana mainnet
+- Transactions are irreversible
+
+<Warning>
+Always double-check the destination address before confirming any transfer.
+</Warning>
+
+## Portfolio Summary
+
+The Portfolio Summary aggregates all wallets:
+
+- **Total SOL**: Sum of all wallet balances
+- **Total USD**: Combined USD value
+- **Wallet Count**: Number of wallets
+- **Average Change**: Weighted average performance
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Use Descriptive Names">
+    Name wallets by their purpose for easy identification.
+  </Accordion>
+  <Accordion title="Separate Concerns">
+    Use different wallets for dev, bundlers, and profits.
+  </Accordion>
+  <Accordion title="Regular Backups">
+    Keep records of wallet addresses for your records.
+  </Accordion>
+  <Accordion title="Monitor Balances">
+    Check balances regularly to ensure sufficient funds.
+  </Accordion>
+</AccordionGroup>

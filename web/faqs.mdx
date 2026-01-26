@@ -1,0 +1,132 @@
+---
+title: FAQs
+description: Frequently asked questions about RugPullBot
+---
+
+# Frequently Asked Questions
+
+Find answers to common questions about RugPullBot.
+
+## Getting Started
+
+<AccordionGroup>
+  <Accordion title="What is RugPullBot?">
+    RugPullBot is a platform for simulating and analyzing cryptocurrency rug pull scenarios using real historical market data from the Solana blockchain. It helps users understand market dynamics through realistic simulations.
+  </Accordion>
+
+  <Accordion title="How do I create an account?">
+    Visit [rugpullbot.com/signup](https://rugpullbot.com/signup), enter your username, email, and password. Verify your email, then optionally connect your Telegram for full feature access.
+  </Accordion>
+
+  <Accordion title="Is Telegram connection required?">
+    Telegram connection is required for Portfolio features (creating and managing coins). However, you can browse the platform, view the Rugs feed, and explore plans without connecting.
+  </Accordion>
+
+  <Accordion title="What are the subscription costs?">
+    Plans range from 1 SOL (Tester) to 6.5 SOL (Premium). Most plans are one-time lifetime payments with no recurring fees.
+  </Accordion>
+</AccordionGroup>
+
+## Coin Creation & Simulation
+
+<AccordionGroup>
+  <Accordion title="What does 'Let AI Handle It' do?">
+    This feature automatically fills in your coin's metadata (name, ticker, description, image, social links) from the latest detected rug in our queue. It ensures realistic simulations based on real historical data.
+  </Accordion>
+
+  <Accordion title="How realistic are the simulations?">
+    Simulations use actual candlestick data from real rug pull events. Price action, volume, and market cap progression mirror the original token's behavior.
+  </Accordion>
+
+  <Accordion title="What is a rug trigger?">
+    Rug triggers automatically execute the rug (sell all holdings) when specific conditions are met, such as reaching a certain market cap, holder count, or liquidity level.
+  </Accordion>
+
+  <Accordion title="Can I run multiple simulations?">
+    Yes, you can create and run multiple coins simultaneously. Each coin has its own settings and runs independently.
+  </Accordion>
+</AccordionGroup>
+
+## Wallet & Funds
+
+<AccordionGroup>
+  <Accordion title="Are the wallets real Solana wallets?">
+    Yes, wallets created in RugPullBot are real Solana wallets. You can send and receive actual SOL. However, trading simulations use historical data replay, not live market execution.
+  </Accordion>
+
+  <Accordion title="Where do profits go?">
+    Profits are calculated based on your configured withdrawal addresses. Set these in Coin Settings before launching. You can split profits across multiple wallets.
+  </Accordion>
+
+  <Accordion title="What fees are involved?">
+    - Platform fees vary by plan
+    - Solana network fees (~0.000005 SOL per transaction)
+    - XMR conversion fees if using privacy features
+  </Accordion>
+</AccordionGroup>
+
+## Technical
+
+<AccordionGroup>
+  <Accordion title="What is the bonding curve?">
+    The bonding curve represents liquidity progress. On Pump.fun, approximately 85 SOL fills the curve to 100%. Your dev buy and bundler configuration affect initial curve position.
+  </Accordion>
+
+  <Accordion title="What's the difference between bundler modes?">
+    - **Safe**: Slower, maximum protection
+    - **Instant**: All wallets execute simultaneously
+    - **Delayed**: Staggered execution for natural appearance
+  </Accordion>
+
+  <Accordion title="What is InstaRUG?">
+    InstaRUG is a preset that analyzes the original rug's data and automatically configures your simulation to rug at the same market cap as the original, using similar settings.
+  </Accordion>
+
+  <Accordion title="How does Anti-MEV protection work?">
+    Anti-MEV protection routes transactions to avoid sandwich attacks from malicious bots that could front-run your trades.
+  </Accordion>
+</AccordionGroup>
+
+## Account & Security
+
+<AccordionGroup>
+  <Accordion title="How do I enable 2FA?">
+    Go to Profile > Security Settings > Enable Two-Factor Authentication. Scan the QR code with an authenticator app and enter the code to confirm.
+  </Accordion>
+
+  <Accordion title="What if I lose access to my 2FA app?">
+    Use one of your backup codes provided during 2FA setup. If you don't have backup codes, contact support for manual verification.
+  </Accordion>
+
+  <Accordion title="Can I change my username?">
+    Username changes are not currently supported. Contact support for special circumstances.
+  </Accordion>
+
+  <Accordion title="How do I delete my account?">
+    Contact support to request account deletion. Note that this action is permanent and cannot be undone.
+  </Accordion>
+</AccordionGroup>
+
+## Support
+
+<AccordionGroup>
+  <Accordion title="How do I get help?">
+    - Join our [Telegram community](https://t.me/rugpullbot) for real-time support
+    - Check this documentation for guides and answers
+    - Premium users have access to priority support
+  </Accordion>
+
+  <Accordion title="Where can I report bugs?">
+    Report bugs in our Telegram community or use the thumbs down button on any response for feedback.
+  </Accordion>
+
+  <Accordion title="Is there a Discord server?">
+    Our primary community is on Telegram. Check announcements for any Discord community links.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+<Note>
+Can't find what you're looking for? Join our [Telegram community](https://t.me/rugpullbot) for personalized help.
+</Note>

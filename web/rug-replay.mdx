@@ -1,0 +1,108 @@
+---
+title: Rug Replay System
+description: How the rug replay simulation system works
+---
+
+# Rug Replay System
+
+The Rug Replay System is the core technology behind RugPullBot's realistic simulations. It captures real rug pull events and allows you to replay them with custom parameters.
+
+## How It Works
+
+<Steps>
+  <Step title="Detection">
+    Our system continuously monitors Solana for potential rug pull events on Pump.fun and other platforms.
+  </Step>
+  <Step title="Data Collection">
+    When a rug is detected, we capture complete candlestick data, trader information, and market statistics.
+  </Step>
+  <Step title="Queue Processing">
+    Detected rugs are processed and their historical data is prepared for simulation replay.
+  </Step>
+  <Step title="Simulation">
+    When you launch a coin, the system replays the original price action using the captured data.
+  </Step>
+</Steps>
+
+## Data Captured
+
+For each detected rug, the system captures:
+
+| Data Type | Description |
+|-----------|-------------|
+| Candlesticks | OHLCV data at 1-minute intervals |
+| Market Cap | Historical market cap progression |
+| Bonding Curve | Curve progress over time |
+| Holders | Holder count changes |
+| Top Traders | Wallet addresses and profit data |
+| Dev Wallet | Original developer's trading activity |
+
+## Coin View Page
+
+When viewing an active simulation, you see:
+
+### TradingView Chart
+- Real-time candlestick chart
+- Price progression matching original rug
+- Volume indicators
+- Customizable timeframes
+
+### Live Statistics
+- **Market Cap**: Current simulated market cap
+- **PnL**: Your profit/loss with multiplier
+- **Bonding Curve**: Progress percentage
+- **Holding**: Current position value
+- **Bots**: Number of bundler wallets
+- **Holders**: Simulated holder count
+
+### Playback Controls
+- **Play/Pause**: Control simulation speed
+- **Speed Multiplier**: 1x, 2x, 5x, 10x playback
+- **Progress Bar**: Visual timeline of simulation
+
+## Simulation States
+
+| State | Description |
+|-------|-------------|
+| **Pending** | Coin created, not yet launched |
+| **Live** | Simulation actively running |
+| **Paused** | Simulation paused by user |
+| **Rugged** | Rug trigger activated, simulation complete |
+
+## Quick Actions
+
+From the coin view, you can:
+
+- **Volume**: Generate additional trading volume
+- **Sell 25%**: Sell a quarter of holdings
+- **Sell 50%**: Sell half of holdings
+- **Sell All**: Exit entire position
+
+## External Links
+
+Each active coin shows quick links to:
+
+<CardGroup cols={4}>
+  <Card title="Pump.fun" icon="capsules">
+    View on Pump.fun
+  </Card>
+  <Card title="GMGN" icon="chart-mixed">
+    View on GMGN analytics
+  </Card>
+  <Card title="Axiom" icon="chart-line">
+    View on Axiom
+  </Card>
+  <Card title="DexScreener" icon="magnifying-glass-chart">
+    View on DexScreener
+  </Card>
+</CardGroup>
+
+## Top Traders Analysis
+
+The simulation includes data from original top traders:
+
+- Wallet addresses
+- Realized profit
+- Buy/sell patterns
+- Dev wallet identification
+- Bundler detection

@@ -1,0 +1,102 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "RugPullBot",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#9945ff",
+    "light": "#14f195",
+    "dark": "#9945ff",
+    "anchors": {
+      "from": "#9945ff",
+      "to": "#14f195"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Telegram Support",
+      "url": "https://t.me/rugpullbot"
+    },
+    {
+      "name": "Dashboard",
+      "url": "https://rugpullbot.com/dashboard"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Get Started",
+    "url": "https://rugpullbot.com/signup"
+  },
+  "tabs": [
+    {
+      "name": "Web App",
+      "url": "web"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "Website",
+      "icon": "globe",
+      "url": "https://rugpullbot.com"
+    },
+    {
+      "name": "Dashboard",
+      "icon": "chart-line",
+      "url": "https://rugpullbot.com/dashboard"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "web/index",
+        "web/signup",
+        "web/dashboard"
+      ]
+    },
+    {
+      "group": "Core Features",
+      "pages": [
+        "web/creating-coins",
+        "web/rug-replay",
+        "web/coin-settings",
+        "web/presets"
+      ]
+    },
+    {
+      "group": "Trading Tools",
+      "pages": [
+        "web/simulation",
+        "web/bundler-modes",
+        "web/rug-triggers"
+      ]
+    },
+    {
+      "group": "Wallet Management",
+      "pages": [
+        "web/wallets",
+        "web/withdrawals"
+      ]
+    },
+    {
+      "group": "Account",
+      "pages": [
+        "web/profile",
+        "web/plans",
+        "web/security"
+      ]
+    },
+    {
+      "group": "Support",
+      "pages": [
+        "web/faqs"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "x": "https://x.com/rugpullbot",
+    "telegram": "https://t.me/rugpullbot"
+  }
+}
