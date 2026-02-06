@@ -61,6 +61,7 @@
       "pages": [
         "web/creating-coins",
         "web/rug-replay",
+        "web/ai-mode",
         "web/coin-settings",
         "web/presets"
       ]
