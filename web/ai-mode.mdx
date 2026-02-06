@@ -13,6 +13,17 @@ description: Fully automated rug simulation powered by artificial intelligence
 
 AI Mode represents the most advanced tier of RugPullBot's capabilities. Unlike manual simulations, AI Mode is a completely autonomous system that creates, launches, and manages rug pull simulations from start to finish using artificial intelligence.
 
+**Key Highlights:**
+- ⚡ **15-20 minute average cycle** - From creation to rug execution
+- 🤖 **Fully automated** - Zero manual intervention required
+- 💼 **Auto-generates wallets** - Creates bundler and withdrawal wallets automatically
+- 🧠 **Intelligent rug timing** - AI decides when to sell based on performance, snipers, and market conditions
+- 💰 **Automatic profit extraction** - Withdraws to generated wallet address after rug
+
+<Tip>
+Once you enable AI Mode, you can literally walk away. The AI will handle token creation, infrastructure setup, trading, rug execution, and profit withdrawal all on its own.
+</Tip>
+
 ## Requirements
 
 ### Wallet Balance
@@ -75,6 +86,12 @@ The AI creates all necessary infrastructure without manual setup:
 | **Discord** | Server with channels and bot integrations |
 | **Website** | Professional landing page with token information |
 | **Servers** | Backend infrastructure for trading operations |
+| **Bundler Wallets** | Automatically generated wallets for coordinated trading |
+| **Withdrawal Wallet** | Dedicated withdrawal address for profit extraction |
+
+<Note>
+**Zero Manual Setup Required**: AI Mode generates its own bundler wallets and withdrawal addresses automatically. You don't need to create or configure any wallets manually.
+</Note>
 
 ### 3. Intelligent Trading Execution
 
@@ -89,16 +106,79 @@ AI Mode makes real-time trading decisions based on market conditions:
     - Price volatility
   </Card>
   
-  <Card title="Sell Decisions" icon="arrow-trend-down">
-    Executes exits strategically:
-    - Gradual position reduction
-    - Peak detection algorithms
-    - Profit-taking schedules
-    - Stop-loss automation
+  <Card title="Rug/Exit Decisions" icon="skull">
+    **AI decides when to rug the coin** based on:
+    - Coin performance trajectory
+    - Sniper activity and behavior
+    - Current SOL price and market conditions
+    - Profit margin targets
+    - Risk assessment algorithms
+    
+    The AI autonomously determines the optimal moment to execute the rug and exit all positions.
   </Card>
 </CardGroup>
 
-### 4. Anti-Sniper & Honeypot Control
+### Typical Lifecycle
+
+<Card title="15-20 Minute Average" icon="clock">
+  **Default AI Mode Cycle Time**
+  
+  Most AI Mode coins operate for 15-20 minutes from launch to rug by default. The entire process is fully automated:
+  
+  1. **0-2 min**: Token creation and infrastructure setup
+  2. **2-5 min**: Initial bundler purchases and liquidity establishment
+  3. **5-15 min**: Active trading, volume generation, and holder accumulation
+  4. **15-20 min**: AI analyzes performance and executes rug when conditions are optimal
+  5. **Post-rug**: Automatic profit withdrawal to generated wallet address
+</Card>
+
+<Warning>
+The AI continuously monitors multiple factors and may rug earlier or hold longer depending on performance. The 15-20 minute window is an average, not a fixed duration.
+</Warning>
+
+### 4. Rug Decision Intelligence
+
+The AI continuously analyzes multiple factors to determine the optimal rug timing:
+
+<AccordionGroup>
+  <Accordion title="Performance Analysis">
+    **Real-time Coin Performance Metrics:**
+    - Current profit margin vs. expected potential
+    - Market cap trajectory (rising, plateauing, or declining)
+    - Trading volume sustainability
+    - Holder growth rate and distribution
+    
+    If performance isn't meeting targets, AI may rug early. If performance exceeds expectations, it may hold longer.
+  </Accordion>
+  
+  <Accordion title="Sniper Detection & Response">
+    **Sniper Activity Monitoring:**
+    - Number and sophistication of detected snipers
+    - Sniper profit extraction patterns
+    - Risk of being counter-rugged by smart snipers
+    - Optimal timing to trap or avoid snipers
+    
+    Heavy sniper presence may trigger earlier rug execution to minimize losses.
+  </Accordion>
+  
+  <Accordion title="Market Conditions">
+    **External Factors:**
+    - Current SOL price and volatility
+    - Overall Solana network congestion
+    - Pump.fun platform activity levels
+    - Competing rug activity in the market
+    
+    Favorable market conditions may extend the cycle; poor conditions trigger faster exits.
+  </Accordion>
+</AccordionGroup>
+
+<Card title="Decision Algorithm" icon="brain">
+  The AI weighs all factors in real-time and calculates an "optimal rug score." When the score indicates peak profitability or elevated risk, the rug is executed automatically.
+  
+  **You don't need to monitor or make decisions** - the AI handles everything.
+</Card>
+
+### 5. Anti-Sniper & Honeypot Control
 
 AI Mode includes sophisticated protection mechanisms:
 
@@ -133,6 +213,9 @@ AI Mode includes sophisticated protection mechanisms:
   <Step title="Token Creation">
     Automatically clones successful tokens with optimized metadata
   </Step>
+  <Step title="Wallet Generation">
+    Creates bundler wallets and withdrawal address automatically (no manual setup needed)
+  </Step>
   <Step title="Infrastructure Deployment">
     Sets up Telegram, Discord, website, and trading infrastructure
   </Step>
@@ -140,15 +223,22 @@ AI Mode includes sophisticated protection mechanisms:
     Initiates bundler purchases and establishes market presence
   </Step>
   <Step title="Trading Management">
-    Continuously monitors and executes buy/sell decisions
+    Continuously monitors performance, sniper activity, SOL price, and market conditions
   </Step>
   <Step title="Protection Activation">
-    Dynamically enables honeypot and blacklist controls
+    Dynamically enables honeypot and blacklist controls based on strategy
+  </Step>
+  <Step title="Rug Decision">
+    **AI analyzes all factors** (performance, snipers, SOL price) and determines the optimal moment to rug
   </Step>
   <Step title="Profit Extraction">
-    Executes optimal exit strategy and routes profits to configured wallets
+    Executes the rug, sells all positions, and automatically withdraws profits to generated wallet
   </Step>
 </Steps>
+
+<Info>
+**Fully Autonomous**: Once enabled, AI Mode handles the entire 15-20 minute cycle without any manual intervention. From creation to rug execution to profit withdrawal, everything is automated.
+</Info>
 
 ## Performance Optimization
 
@@ -171,6 +261,28 @@ AI Mode requires substantial capital because:
 4. **Slippage Management**: Executing large orders without price impact
 5. **Reserve Capital**: Handling unexpected market movements
 
+## Automatic Wallet Creation
+
+<Card title="Zero Manual Setup" icon="wand-magic-sparkles">
+  **AI Mode generates all required wallets automatically:**
+  
+  ### Bundler Wallets
+  - Created fresh for each coin simulation
+  - Funded and distributed automatically
+  - No need to manage multiple wallet addresses
+  - AI handles coordination between all bundler wallets
+  
+  ### Withdrawal Wallet
+  - Generated automatically for profit extraction
+  - Unique address for each AI Mode session
+  - Profits are sent here after successful rug
+  - You don't need to configure withdrawal addresses manually
+</Card>
+
+<Warning>
+**Important**: While AI Mode creates its own wallets, you still need to maintain the minimum 40 SOL balance in your main account wallets to fund operations. The AI draws capital from your main wallets to fund the bundler wallets it creates.
+</Warning>
+
 ## Enabling AI Mode
 
 <Steps>
@@ -183,11 +295,11 @@ AI Mode requires substantial capital because:
   <Step title="Activate AI Mode">
     Navigate to Settings → AI Mode → Enable
   </Step>
-  <Step title="Configure Preferences">
-    Set risk tolerance, target profit margins, and withdrawal addresses
+  <Step title="Configure Preferences (Optional)">
+    Set risk tolerance and target profit margins if desired. Withdrawal addresses are generated automatically.
   </Step>
   <Step title="Launch">
-    AI Mode will begin operating autonomously
+    AI Mode will begin operating autonomously - wallets, infrastructure, and everything else is handled automatically
   </Step>
 </Steps>
 
