@@ -7,17 +7,23 @@
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#9945ff",
-    "light": "#14f195",
-    "dark": "#9945ff",
+    "primary": "#8B5CF6",
+    "light": "#A78BFA",
+    "dark": "#7C3AED",
+    "background": {
+      "dark": "#0f0f1e"
+    },
     "anchors": {
-      "from": "#9945ff",
-      "to": "#14f195"
+      "from": "#8B5CF6",
+      "to": "#A78BFA"
     }
+  },
+  "modeToggle": {
+    "default": "dark"
   },
   "topbarLinks": [
     {
-      "name": "Telegram Support",
+      "name": "Telegram",
       "url": "https://t.me/rugpullbot"
     },
     {
@@ -69,7 +75,7 @@
     {
       "group": "Trading Tools",
       "pages": [
-        "web/simulation",
+        "web/live-trading",
         "web/bundler-modes",
         "web/rug-triggers"
       ]

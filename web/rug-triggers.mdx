@@ -18,9 +18,9 @@ Rug triggers automatically execute the rug when specific market conditions are m
 | Setting | Description |
 |---------|-------------|
 | Enable | Toggle market cap trigger on/off |
-| Amount | USD value to trigger (e.g., $50,000) |
+| Amount | USD value to trigger (e.g., 50,000 USD) |
 
-**Example**: Set to $50,000 to automatically rug when market cap reaches $50K.
+**Example**: Set to 50,000 USD to automatically rug when market cap reaches 50K.
 
 ### Holder Trigger
 
@@ -46,7 +46,7 @@ Rug triggers automatically execute the rug when specific market conditions are m
 | Enable | Toggle liquidity trigger on/off |
 | Amount | USD value of liquidity to trigger |
 
-**Example**: Set to $10,000 to rug when liquidity pool reaches $10K.
+**Example**: Set to 10,000 USD to rug when liquidity pool reaches 10K.
 
 ## Trigger Behavior
 
@@ -62,7 +62,7 @@ When a trigger condition is met:
   <Step title="Position Exit">
     All holdings are sold according to withdrawal configuration.
   </Step>
-  <Step title="Simulation Complete">
+  <Step title="Complete">
     Coin moves to "Rugged" status with final statistics.
   </Step>
 </Steps>
@@ -72,11 +72,11 @@ When a trigger condition is met:
 You can enable multiple triggers simultaneously. The rug executes when **any** enabled trigger is reached (OR logic).
 
 **Example Configuration:**
-- Market Cap: $50,000 ✅
+- Market Cap: 50,000 USD ✅
 - Holders: 100 ✅
 - Liquidity: Disabled ❌
 
-This rugs when market cap hits $50K **OR** holders reach 100, whichever happens first.
+This rugs when market cap hits 50K **OR** holders reach 100, whichever happens first.
 
 ## InstaRUG Trigger
 
@@ -104,12 +104,12 @@ InstaRUG disables holder and liquidity triggers, using only market cap.
 If you don't want automatic triggers, disable all triggers and use the manual "Sell All" button in the coin view.
 
 <Warning>
-Manual rugging requires you to actively monitor the simulation.
+Manual rugging requires you to actively monitor the trade.
 </Warning>
 
 ## Trigger Analytics
 
-After simulation completes, view trigger analytics in the Rugged Coins section:
+After trading completes, view trigger analytics in the Rugged Coins section:
 
 - Which trigger fired
 - Market conditions at rug time

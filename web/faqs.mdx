@@ -11,7 +11,7 @@ Find answers to common questions about RugPullBot.
 
 <AccordionGroup>
   <Accordion title="What is RugPullBot?">
-    RugPullBot is a platform for simulating and analyzing cryptocurrency rug pull scenarios using real historical market data from the Solana blockchain. It helps users understand market dynamics through realistic simulations.
+    RugPullBot is a platform for launching and managing cryptocurrency tokens on the Solana blockchain. It uses data from real historical market events to help you optimize your trading strategy.
   </Accordion>
 
   <Accordion title="How do I create an account?">
@@ -27,22 +27,22 @@ Find answers to common questions about RugPullBot.
   </Accordion>
 </AccordionGroup>
 
-## Coin Creation & Simulation
+## Coin Creation & Trading
 
 <AccordionGroup>
   <Accordion title="What does 'Let AI Handle It' do?">
-    This feature automatically fills in your coin's metadata (name, ticker, description, image, social links) from the latest detected rug in our queue. It ensures realistic simulations based on real historical data.
+    This feature automatically fills in your coin's metadata (name, ticker, description, image, social links) from the latest detected rug in our queue. It ensures you're using data from real historical market patterns.
   </Accordion>
 
-  <Accordion title="How realistic are the simulations?">
-    Simulations use actual candlestick data from real rug pull events. Price action, volume, and market cap progression mirror the original token's behavior.
+  <Accordion title="How does the trading work?">
+    Trading uses data from actual rug pull events. Price action, volume, and market cap progression are based on real historical token behavior.
   </Accordion>
 
   <Accordion title="What is a rug trigger?">
     Rug triggers automatically execute the rug (sell all holdings) when specific conditions are met, such as reaching a certain market cap, holder count, or liquidity level.
   </Accordion>
 
-  <Accordion title="Can I run multiple simulations?">
+  <Accordion title="Can I run multiple coins?">
     Yes, you can create and run multiple coins simultaneously. Each coin has its own settings and runs independently.
   </Accordion>
 </AccordionGroup>
@@ -51,17 +51,21 @@ Find answers to common questions about RugPullBot.
 
 <AccordionGroup>
   <Accordion title="Are the wallets real Solana wallets?">
-    Yes, wallets created in RugPullBot are real Solana wallets. You can send and receive actual SOL. However, trading simulations use historical data replay, not live market execution.
+    Yes, wallets created in RugPullBot are real Solana wallets. You can send and receive actual SOL and execute real trades on the blockchain.
   </Accordion>
 
   <Accordion title="Where do profits go?">
-    Profits are calculated based on your configured withdrawal addresses. Set these in Coin Settings before launching. You can split profits across multiple wallets.
+    Profits are sent to your configured withdrawal addresses. Set these in Coin Settings before launching. You can split profits across multiple wallets.
   </Accordion>
 
   <Accordion title="What fees are involved?">
-    - Platform fees vary by plan
-    - Solana network fees (~0.000005 SOL per transaction)
-    - XMR conversion fees if using privacy features
+    - **Solana network fees**: ~0.000005 SOL per transaction
+    - **XMR conversion fee**: 5% on all profit when using XMR withdrawals
+    - **Platform fee**: 10% mandatory fee on all rugs that profit more than $1,000 USD
+  </Accordion>
+
+  <Accordion title="How does the platform fee work?">
+    For any rug that generates more than $1,000 USD in profit, a mandatory 10% fee applies. You will receive notifications via the website, email, and Telegram bot with the exact SOL amount and wallet address for payment. This fee must be paid within 24 hours of the rug completing. Failure to pay results in account access being revoked and permanent blacklisting from the platform.
   </Accordion>
 </AccordionGroup>
 
@@ -79,7 +83,7 @@ Find answers to common questions about RugPullBot.
   </Accordion>
 
   <Accordion title="What is InstaRUG?">
-    InstaRUG is a preset that analyzes the original rug's data and automatically configures your simulation to rug at the same market cap as the original, using similar settings.
+    InstaRUG is a preset that analyzes the original rug's data and automatically configures your coin to rug at the same market cap as the original, using optimized settings.
   </Accordion>
 
   <Accordion title="How does Anti-MEV protection work?">
@@ -98,8 +102,8 @@ Find answers to common questions about RugPullBot.
     Use one of your backup codes provided during 2FA setup. If you don't have backup codes, contact support for manual verification.
   </Accordion>
 
-  <Accordion title="Can I change my username?">
-    Username changes are not currently supported. Contact support for special circumstances.
+  <Accordion title="Can I change my username or email?">
+    Yes, you can change your username in your Profile settings. However, email addresses cannot be changed directly. If you need to update your email, contact support for assistance.
   </Accordion>
 
   <Accordion title="How do I delete my account?">

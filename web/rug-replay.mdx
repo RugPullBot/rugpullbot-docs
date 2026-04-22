@@ -1,11 +1,11 @@
 ---
 title: Rug Replay System
-description: How the rug replay simulation system works
+description: How the rug replay technology works
 ---
 
 # Rug Replay System
 
-The Rug Replay System is the core technology behind RugPullBot's realistic simulations. It captures real rug pull events and allows you to replay them with custom parameters.
+The Rug Replay System is the core technology behind RugPullBot. It captures real rug pull events and allows you to launch coins with proven market patterns.
 
 ## How It Works
 
@@ -17,10 +17,10 @@ The Rug Replay System is the core technology behind RugPullBot's realistic simul
     When a rug is detected, we capture complete candlestick data, trader information, and market statistics.
   </Step>
   <Step title="Queue Processing">
-    Detected rugs are processed and their historical data is prepared for simulation replay.
+    Detected rugs are processed and their historical data is prepared for your use.
   </Step>
-  <Step title="Simulation">
-    When you launch a coin, the system replays the original price action using the captured data.
+  <Step title="Launch">
+    When you launch a coin, the system uses the captured data to inform your trading strategy.
   </Step>
 </Steps>
 
@@ -34,40 +34,38 @@ For each detected rug, the system captures:
 | Market Cap | Historical market cap progression |
 | Bonding Curve | Curve progress over time |
 | Holders | Holder count changes |
-| Top Traders | Wallet addresses and profit data |
 | Dev Wallet | Original developer's trading activity |
 
 ## Coin View Page
 
-When viewing an active simulation, you see:
+When viewing an active coin, you see:
 
 ### TradingView Chart
 - Real-time candlestick chart
-- Price progression matching original rug
+- Live price progression
 - Volume indicators
 - Customizable timeframes
 
 ### Live Statistics
-- **Market Cap**: Current simulated market cap
+- **Market Cap**: Current market cap
 - **PnL**: Your profit/loss with multiplier
 - **Bonding Curve**: Progress percentage
 - **Holding**: Current position value
 - **Bots**: Number of bundler wallets
-- **Holders**: Simulated holder count
+- **Holders**: Current holder count
 
-### Playback Controls
-- **Play/Pause**: Control simulation speed
-- **Speed Multiplier**: 1x, 2x, 5x, 10x playback
-- **Progress Bar**: Visual timeline of simulation
+### Controls
+- **Speed View**: 1x, 2x, 5x, 10x chart speed
+- **Progress Bar**: Visual timeline
 
-## Simulation States
+## Coin States
 
 | State | Description |
 |-------|-------------|
 | **Pending** | Coin created, not yet launched |
-| **Live** | Simulation actively running |
-| **Paused** | Simulation paused by user |
-| **Rugged** | Rug trigger activated, simulation complete |
+| **Live** | Coin actively trading |
+| **Paused** | Trading paused by user |
+| **Rugged** | Rug trigger activated, trade complete |
 
 ## Quick Actions
 
@@ -80,29 +78,19 @@ From the coin view, you can:
 
 ## External Links
 
-Each active coin shows quick links to:
+Each active coin shows quick links to external platforms:
 
 <CardGroup cols={4}>
-  <Card title="Pump.fun" icon="capsules">
+  <Card title="Pump.fun" icon="rocket" href="https://pump.fun">
     View on Pump.fun
   </Card>
-  <Card title="GMGN" icon="chart-mixed">
+  <Card title="GMGN" icon="chart-mixed" href="https://gmgn.ai">
     View on GMGN analytics
   </Card>
-  <Card title="Axiom" icon="chart-line">
+  <Card title="Axiom" icon="chart-line" href="https://axiom.trade">
     View on Axiom
   </Card>
-  <Card title="DexScreener" icon="magnifying-glass-chart">
+  <Card title="DexScreener" icon="magnifying-glass-chart" href="https://dexscreener.com">
     View on DexScreener
   </Card>
 </CardGroup>
-
-## Top Traders Analysis
-
-The simulation includes data from original top traders:
-
-- Wallet addresses
-- Realized profit
-- Buy/sell patterns
-- Dev wallet identification
-- Bundler detection

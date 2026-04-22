@@ -1,26 +1,26 @@
 ---
-title: Trading Simulation
-description: Understanding the market simulation system
+title: Live Trading
+description: Understanding the real-time trading system
 ---
 
-# Trading Simulation
+# Live Trading
 
-RugPullBot creates realistic market simulations using actual historical data from detected rug pulls.
+RugPullBot executes real trades on the Solana blockchain using your configured settings and wallets.
 
-## How Simulation Works
+## How It Works
 
-The simulation engine replays historical price data while calculating your position based on:
+The trading engine executes live transactions based on:
 
 - Dev wallet initial buy
 - Bundler wallet purchases
-- Simulated market activity
+- Real market activity
 - Your configured settings
 
-## Simulation Components
+## Trading Components
 
-### Candlestick Replay
+### Price Chart
 
-The system replays original candlestick data including:
+The system displays real-time candlestick data including:
 
 | Data Point | Description |
 |------------|-------------|
@@ -33,7 +33,7 @@ The system replays original candlestick data including:
 
 ### Position Tracking
 
-Your simulated position is calculated as:
+Your position is calculated as:
 
 ```
 Position = Dev Buy Amount + (Bundler Wallets × Bundler Amount)
@@ -57,33 +57,19 @@ Your dev buy and bundler configuration directly affects bonding curve progress.
 
 ## Live Statistics
 
-During simulation, you see real-time stats:
+During trading, you see real-time stats:
 
 | Statistic | Description |
 |-----------|-------------|
-| MCAP | Current simulated market cap |
+| MCAP | Current market cap |
 | PNL | Your profit/loss in USD |
 | Multiplier | Return multiple (e.g., "7.1x") |
 | Bonding | Bonding curve percentage |
 | Holding | Current value of your position |
 | Bots | Number of bundler wallets active |
-| Holders | Simulated holder count |
+| Holders | Current holder count |
 
-## Playback Controls
-
-### Speed Options
-- **1x**: Real-time playback
-- **2x**: Double speed
-- **5x**: Five times speed
-- **10x**: Maximum speed
-
-### Play/Pause
-Control when the simulation runs. Pausing freezes all statistics.
-
-### Progress
-Visual progress bar showing simulation timeline position.
-
-## Market Cap Simulation
+## Market Cap Calculation
 
 Market cap is calculated using:
 
@@ -93,35 +79,28 @@ Market Cap = Token Price × Total Supply
 
 Where token price is derived from:
 - Bonding curve position
-- Historical price data
-- Simulated trading activity
+- Live price data
+- Trading activity
 
-## Volume Simulation
-
-Trading volume is simulated based on:
-- Original rug's volume profile
-- Your micro-buy configuration
-- Market simulation wallet activity
-
-## Simulation States
+## Trading States
 
 | State | Icon | Description |
 |-------|------|-------------|
-| Live | 🟢 | Actively running |
+| Live | 🟢 | Actively trading |
 | Paused | 🟡 | Temporarily stopped |
 | Idle | ⚪ | Not started |
-| Rugged | 🔴 | Trigger activated, complete |
+| Completed | 🔴 | Trigger activated, trade complete |
 
 ## Best Practices
 
 <AccordionGroup>
-  <Accordion title="Start Slow">
-    Begin with 1x speed to understand the price action pattern.
+  <Accordion title="Monitor Your Position">
+    Keep an eye on your holdings and PnL during live trading.
   </Accordion>
   <Accordion title="Watch Triggers">
     Monitor your rug trigger thresholds as market cap approaches.
   </Accordion>
   <Accordion title="Review After Completion">
-    Analyze results in the Rugged Coins section after simulation ends.
+    Analyze results in the Completed Coins section after trading ends.
   </Accordion>
 </AccordionGroup>
