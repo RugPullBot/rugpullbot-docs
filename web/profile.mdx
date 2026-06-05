@@ -1,11 +1,11 @@
 ---
-title: Profile
-description: Manage your account settings
+title: Profile & Account
+description: Manage your account settings, connected accounts, and security
 ---
 
-# Profile
+# Profile & Account
 
-The Profile page allows you to manage your account settings and preferences.
+The Profile page is your central hub for managing account settings, connected accounts, email, password, and two-factor authentication.
 
 ## Accessing Profile
 
@@ -13,79 +13,110 @@ Click on your username in the navigation bar and select "Profile" from the dropd
 
 ## Account Information
 
-### Username
-Your unique identifier on the platform. Displayed in:
-- Navigation bar
-- Rug activity feed (when publishing)
-- Leaderboards
+Your profile displays:
 
-You can change your username at any time from your Profile settings.
+| Field | Description |
+|-------|-------------|
+| Email | Your email address with verification status |
+| Full Name | Your display name |
+| Member Since | Account creation date |
+| Account ID | Your unique account identifier |
+| Referral Code | Your personal referral code for sharing |
 
-### Email
-Email address associated with your account. Used for:
-- Account recovery
-- Notifications
-- Verification
+## Subscription Status
+
+View your current subscription at the top of the profile:
+
+- Plan name and tier badge
+- Active/Inactive status
+- Activation and expiration dates
+- Days remaining
+- Purchased add-ons
+
+Click the plan badge to navigate to the [Plans](/web/plans) page for upgrades.
+
+## Connected Accounts
+
+Link social accounts to your profile for faster sign-in and account recovery. Supported providers:
+
+<CardGroup cols={2}>
+  <Card title="Google" icon="google">
+    Link your Google account for one-click sign-in.
+  </Card>
+  <Card title="Discord" icon="discord">
+    Connect your Discord account.
+  </Card>
+  <Card title="Steam" icon="steam">
+    Link your Steam account.
+  </Card>
+  <Card title="Telegram" icon="paper-plane">
+    Connect via the Telegram bot. Once linked, Telegram cannot be disconnected.
+  </Card>
+</CardGroup>
+
+### Linking an Account
+
+Click **Connect** next to any unlinked provider. You'll be redirected to that provider's login page, then back to your profile once linked.
+
+### Unlinking an Account
+
+Click **Disconnect** to remove a linked provider.
+
+<Warning>
+You cannot disconnect a provider if it's your only sign-in method. Make sure you have a password set or another provider linked first.
+</Warning>
 
 <Note>
-Email addresses cannot be changed directly. Contact support if you need to update your email address.
+Telegram connections are permanent and cannot be disconnected from the profile page.
 </Note>
 
-## Telegram Connection
+## Email Management
 
-### Connecting Telegram
+### Adding or Changing Email
 
-If not connected, you'll see the option to link your Telegram account:
+If you signed up via SSO without an email, or need to update your email:
 
 <Steps>
-  <Step title="Click Connect">
-    Click "Connect to Telegram" in your profile
+  <Step title="Enter New Email">
+    Type your new email address in the email field.
   </Step>
-  <Step title="Open Telegram Bot">
-    Click the link to open our Telegram bot
+  <Step title="Send Verification Code">
+    Click "Send Code" to receive a 6-digit verification code at that address.
   </Step>
-  <Step title="Start Bot">
-    Send /start to the bot
-  </Step>
-  <Step title="Verify Code">
-    Enter the verification code shown
+  <Step title="Enter Code">
+    Enter the code from your inbox to verify ownership.
   </Step>
 </Steps>
 
-### Benefits of Connection
-
-- Access to Portfolio features
-- Real-time notifications
-- Telegram bot commands
-- Push alerts
-
-### Disconnecting
-
-To disconnect Telegram:
-1. Go to Profile settings
-2. Click "Disconnect Telegram"
-3. Confirm disconnection
-
-<Warning>
-Disconnecting Telegram will disable Portfolio access and bot features.
-</Warning>
+Your email is used for:
+- Account recovery and password resets
+- Important notifications
+- Required before setting a password
 
 ## Password Management
 
-### Change Password
+### Setting a Password (SSO Users)
+
+If you signed up via SSO, you may not have a password yet. To set one:
+
+1. Make sure you have a **verified email address** first
+2. Click **Set Password** in the password section
+3. Enter and confirm your new password
+
+### Changing Your Password
 
 <Steps>
-  <Step title="Click Change Password">
-    Navigate to Profile > Change Password
+  <Step title="Navigate to Password Section">
+    Find the password section in your profile.
   </Step>
-  <Step title="Enter Current">
-    Type your current password
+  <Step title="Enter Current Password">
+    Type your current password for verification.
   </Step>
-  <Step title="Enter New">
-    Create a new password meeting requirements
+  <Step title="Enter New Password">
+    Create a new password meeting the requirements below.
   </Step>
   <Step title="Confirm">
-    Re-enter the new password
+    Re-enter the new password to confirm.
   </Step>
 </Steps>
 
@@ -93,29 +124,28 @@ Disconnecting Telegram will disable Portfolio access and bot features.
 
 - Minimum 8 characters
 - At least one uppercase letter
+- At least one lowercase letter
 - At least one number
 - At least one special character
 
-## Subscription Information
-
-View your current subscription status:
-
-| Field | Description |
-|-------|-------------|
-| Plan | Current subscription tier |
-| Status | Active/Expired |
-| Features | List of included features |
-
-Click on the plan badge to navigate to the Plans page for upgrades.
-
 ## Redeem Code
 
-Enter subscription or addon codes:
+Enter subscription or add-on codes:
 
 1. Enter code in the "Redeem Code" field
 2. Click "Redeem"
-3. Plan/addon activates immediately
+3. Plan or add-on activates immediately
 
 <Tip>
-Redeem codes are case-insensitive but must be entered exactly.
+Redeem codes are case-insensitive but must be entered exactly as provided.
 </Tip>
+
+## Account Activity
+
+The bottom of the profile shows your account statistics:
+
+| Stat | Description |
+|------|-------------|
+| Wallets | Number of wallets created |
+| Coins | Number of coins created |
+| Rugs | Number of completed rugs |

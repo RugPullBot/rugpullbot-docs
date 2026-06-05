@@ -5,29 +5,29 @@ description: Account security settings and best practices
 
 # Security
 
-Protect your RugPullBot account with these security features.
+Protect your RugPullBot account with two-factor authentication, trusted devices, and security best practices.
 
 ## Two-Factor Authentication (2FA)
 
-Add an extra layer of security to your account.
+Add an extra layer of security to your account with TOTP-based 2FA.
 
 ### Enabling 2FA
 
 <Steps>
-  <Step title="Access Settings">
-    Go to Profile > Security Settings
+  <Step title="Open Profile">
+    Go to your Profile page and find the Two-Factor Authentication section.
   </Step>
-  <Step title="Enable 2FA">
-    Click "Enable Two-Factor Authentication"
+  <Step title="Click Enable">
+    Click "Enable Two-Factor Authentication" to generate a QR code.
   </Step>
   <Step title="Scan QR Code">
-    Use an authenticator app to scan the QR code
+    Use an authenticator app to scan the QR code, or manually enter the secret key.
   </Step>
-  <Step title="Enter Code">
-    Enter the 6-digit code from your app
+  <Step title="Enter Verification Code">
+    Enter the 6-digit code from your authenticator app to confirm setup.
   </Step>
-  <Step title="Save Backup Codes">
-    Store backup codes securely for recovery
+  <Step title="Save Recovery Codes">
+    Download or email your recovery codes and store them securely.
   </Step>
 </Steps>
 
@@ -39,13 +39,58 @@ Add an extra layer of security to your account.
 - 1Password
 - Any TOTP-compatible app
 
+### 2FA on Sign-In
+
+When 2FA is enabled, you'll need to enter a 6-digit code after your password. You can also use a recovery code if you don't have access to your authenticator app.
+
+### Recovery Codes
+
+During 2FA setup, you receive 8-10 single-use recovery codes in the format `XXXX-XXXX`. These are your backup if you lose access to your authenticator app.
+
+<Warning>
+Store your recovery codes in a safe place. Each code can only be used once. Without them, account recovery requires manual support verification.
+</Warning>
+
+You can:
+- **Download** recovery codes as a `.txt` file
+- **Email** recovery codes to your verified email address
+- **View** remaining codes in your profile settings
+
+### Disabling 2FA
+
+To disable 2FA:
+1. Go to Profile > Two-Factor Authentication
+2. Click "Disable 2FA"
+3. Enter your current password
+4. Enter a 2FA code or recovery code to confirm
+
 ### 2FA Warning Banner
 
 If 2FA is not enabled, you'll see a warning banner reminding you to secure your account.
 
-<Warning>
-Enable 2FA to protect your account from unauthorized access.
-</Warning>
+## Trusted Devices
+
+After verifying 2FA on a device, you can choose to **trust it for 7 days**. Trusted devices skip the 2FA prompt on subsequent sign-ins.
+
+### Managing Trusted Devices
+
+View and manage your trusted devices in the profile:
+
+| Info | Description |
+|------|-------------|
+| Browser | Browser name and version |
+| Operating System | Device OS |
+| IP Address | IP used during verification |
+| Last Used | When the device was last active |
+| Expires | When the 7-day trust period ends |
+
+You can:
+- **Revoke** individual devices
+- **Revoke All** trusted devices at once
+
+<Tip>
+Revoke all trusted devices immediately if you suspect unauthorized access to your account.
+</Tip>
 
 ## Password Security
 
@@ -55,46 +100,35 @@ Enable 2FA to protect your account from unauthorized access.
 - Mix uppercase and lowercase letters
 - Include numbers and symbols
 - Avoid common words or patterns
-- Don't reuse passwords
+- Don't reuse passwords from other sites
 
 ### Changing Your Password
 
-1. Go to Profile > Change Password
+1. Go to Profile > Password section
 2. Enter current password
 3. Create new strong password
 4. Confirm new password
 
-## Session Security
-
-### Active Sessions
-
-Monitor your active login sessions:
-
-- Device type
-- Location (approximate)
-- Last activity time
-
-### Ending Sessions
-
-Click "Sign Out" to end your current session. All other sessions remain active unless individually terminated.
-
 ## Security Best Practices
 
 <AccordionGroup>
+  <Accordion title="Enable 2FA">
+    Two-factor authentication significantly reduces the risk of account compromise.
+  </Accordion>
   <Accordion title="Use Unique Passwords">
     Never reuse your RugPullBot password on other sites.
   </Accordion>
-  <Accordion title="Enable 2FA">
-    Two-factor authentication significantly reduces account compromise risk.
+  <Accordion title="Link Multiple Sign-In Methods">
+    Connect at least two sign-in methods (e.g., email + Google) so you're never locked out.
   </Accordion>
   <Accordion title="Verify URLs">
-    Always check you're on rugpullbot.com before logging in.
+    Always check you're on rugpullbot.com before entering credentials.
   </Accordion>
   <Accordion title="Secure Your Email">
-    Your email is used for recovery - keep it secure.
+    Your email is used for recovery — keep it protected with its own 2FA.
   </Accordion>
-  <Accordion title="Monitor Activity">
-    Check your activity log regularly for suspicious actions.
+  <Accordion title="Monitor Trusted Devices">
+    Regularly review your trusted devices and revoke any you don't recognize.
   </Accordion>
 </AccordionGroup>
 
@@ -103,10 +137,10 @@ Click "Sign Out" to end your current session. All other sessions remain active u
 Built-in trading security features:
 
 ### Anti-MEV Protection
-Protects transactions from sandwich attacks by malicious bots.
+Protects transactions from sandwich attacks by routing through secure channels.
 
-### Anti-Sniper Mode  
-Prevents known sniper bots from front-running your launch.
+### Anti-Sniper Mode
+Prevents known sniper bots from front-running your token launch.
 
 <Note>
 These features are enabled by default and highly recommended to keep on.
@@ -129,16 +163,23 @@ Responsible disclosure of security issues is appreciated and may be rewarded.
 
 ### Lost Password
 
-1. Click "Forgot Password" on sign-in page
+1. Click "Forgot Password" on the sign-in page
 2. Enter your email address
-3. Check email for reset link
-4. Create new password
+3. Check email for a reset link
+4. Create a new password
 
 ### Lost 2FA Access
 
-1. Use one of your backup codes
-2. If no backup codes, contact support
-3. Verify identity through support process
+1. Use one of your recovery codes on the sign-in screen
+2. If no recovery codes remain, contact support via Telegram
+3. Verify your identity through the support process
+
+### SSO Recovery
+
+If you signed up via SSO and can't access that provider:
+1. Sign in with any other linked provider
+2. Or use your email + password if one is set
+3. Contact support if all sign-in methods are unavailable
 
 <Warning>
 Store your 2FA backup codes securely. Without them, account recovery requires manual verification.
